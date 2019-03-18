@@ -16,7 +16,7 @@ const DEFAULT_CARD_IMAGE: IImage = {
 export const Card = ({ image, ...cardProps }: ICard) => {
   return (
     <BaseCard {...cardProps}>
-      <BaseCard.Face front {...image} />
+      <BaseCard.Face front {...{ ...image, matched: cardProps.isMatched }} />
       <BaseCard.Face {...DEFAULT_CARD_IMAGE} />
     </BaseCard>
   );

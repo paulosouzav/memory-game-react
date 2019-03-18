@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 import { SHADOWS, ROTATION } from '../../constants';
 import Face from './Face';
 import { mediaMax } from '../../utils';
+import { transitions } from 'polished';
 
 export interface IBaseCard {
   isFlipped?: boolean;
@@ -9,21 +10,21 @@ export interface IBaseCard {
 }
 
 const BaseCard: any = styled.div`
-  width: calc((100% / 4) - 20px);
-  height: calc((100% / 3) - 20px);
+  width: 155px;
+  height: 210px;
   margin: 10px;
   position: relative;
   border-radius: 8px;
 
-  transition: transform 0.4s, opacity 0.4s;
+  ${transitions(['transform', 'opacity'], '.4s')}
   transform: scale(1);
   transform-style: preserve-3d;
 
   ${SHADOWS.normal}
   
   ${mediaMax.sm`
-    width: calc((100% / 3) - 20px);
-    height: calc((100% / 4) - 20px);
+    width: 80px;
+    height: 130px;
   `}
 
   ${({ isFlipped }: IBaseCard) => !isFlipped && ACTIVE}

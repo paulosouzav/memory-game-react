@@ -1,5 +1,6 @@
 export { CARDS } from './cards';
-export { COLORS } from './colors';
+export { COLORS, TRANSPARENT_BLACK } from './colors';
+export { FONTS, FONT_FACES } from './fonts';
 export { ROTATION } from './rotation';
 export { ROUTES } from './routes';
 export { BREAKPOINTS, MAX_WIDTHS } from './screen';

@@ -1,3 +1,5 @@
+import { transparentize } from 'polished';
+
 export const COLORS = Object.freeze({
   transparent: 'rgba(0,0,0,0)',
   black: '#000000',
@@ -21,4 +23,10 @@ export const COLORS = Object.freeze({
   gray700: '#495057',
   gray800: '#343a40',
   gray900: '#212529',
+});
+
+export const TRANSPARENT_BLACK = Object.freeze({
+  soft: transparentize(0.8, COLORS.black),
+  normal: transparentize(0.5, COLORS.black),
+  hard: transparentize(0.3, COLORS.black),
 });

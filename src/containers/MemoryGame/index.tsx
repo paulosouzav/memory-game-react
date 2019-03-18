@@ -1,8 +1,15 @@
 import React, { PureComponent } from 'react';
 import { Board } from './Board';
+import { Card, EndGame } from '../../components';
+import { ICard } from '../../components/Card';
 import { CARDS } from '../../constants';
-import { Card, ICard } from '../../components/Card';
-import { generateBoardCards, getUnmatchedCards } from './utils';
+import {
+  generateBoardCards,
+  unflipUnmatchedCards,
+  unflipAllCards,
+  checkCardsMatch,
+  checkEndGame,
+} from './utils';
 import { Nullable } from '../../utils/nullable';
 import isEqual from 'lodash/isEqual';
 import cloneDeep from 'lodash/cloneDeep';
@@ -49,22 +56,22 @@ export class MemoryGame extends PureComponent<any, State> {
   checkForMatch = () => {
     const { firstCard, secondCard } = this.state;
     const isMatch = firstCard!.id === secondCard!.id;
-    // isMatch ? this.disableCards() : this.unFlipCards();
-    this.unflipCards();
+    isMatch ? this.disableCards() : this.unflipCards();
   };
 
   disableCards = () => {
-    // TODO
+    const { firstCard, cards } = this.state;
+    const matchedCards = checkCardsMatch(cards, firstCard!);
+    this.setState({ cards: matchedCards }, this.resetBoardProps);
   };
 
-  unflipCards = () => {
+  unflipCards = (unflipAll?: boolean) => {
     this.setState({ lockBoard: true });
 
     const { cards } = this.state;
-    const unflippedCards = getUnmatchedCards(cards).map(card => ({
-      ...card,
-      isFlipped: false,
-    }));
+    const unflippedCards = unflipAll
+      ? unflipAllCards(cards)
+      : unflipUnmatchedCards(cards);
 
     setTimeout(() => {
       this.setState({ cards: unflippedCards }, this.resetBoardProps);
@@ -76,14 +83,41 @@ export class MemoryGame extends PureComponent<any, State> {
     this.setState({ ...boardprops });
   };
 
+  startOver = async () => {
+    const unflipAllCards = true;
+    await this.unflipCards(unflipAllCards);
+    this.setState({ cards: generateBoardCards(CARDS) });
+  };
+
   _renderCards = () => {
     const { cards } = this.state;
-    return cards.map(card => (
-      <Card {...{ ...card, onClick: this.flipCard(card) }} />
-    ));
+    return cards.map(this._renderSingleCard);
+  };
+
+  _renderSingleCard = (card: ICard) => {
+    const onClick = card.isMatched ? null : this.flipCard(card);
+    return <Card {...{ ...card, onClick }} />;
+  };
+
+  _renderEndGame = () => {
+    const { cards } = this.state;
+    const hasGameEnded = checkEndGame(cards);
+    return (
+      <EndGame {...{ active: hasGameEnded }}>
+        <EndGame.Title>YOU WON!</EndGame.Title>
+        <EndGame.Button {...{ onClick: this.startOver }}>
+          Play again
+        </EndGame.Button>
+      </EndGame>
+    );
   };
 
   render() {
-    return <Board>{this._renderCards()}</Board>;
+    return (
+      <>
+        {this._renderEndGame()}
+        <Board>{this._renderCards()}</Board>;
+      </>
+    );
   }
 }
