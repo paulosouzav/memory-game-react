@@ -23,7 +23,7 @@ const BaseCard: any = styled.div`
   ${SHADOWS.normal}
   
   ${mediaMax.sm`
-    width: 80px;
+    width: 90px;
     height: 130px;
   `}
 
