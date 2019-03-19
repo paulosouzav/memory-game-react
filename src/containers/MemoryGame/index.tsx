@@ -9,6 +9,7 @@ import {
   unflipAllCards,
   checkCardsMatch,
   checkEndGame,
+  delay,
 } from './utils';
 import { Nullable } from '../../utils/nullable';
 import isEqual from 'lodash/isEqual';
@@ -65,7 +66,7 @@ export class MemoryGame extends PureComponent<any, State> {
     this.setState({ cards: matchedCards }, this.resetBoardProps);
   };
 
-  unflipCards = (unflipAll?: boolean) => {
+  unflipCards = async (unflipAll?: boolean) => {
     this.setState({ lockBoard: true });
 
     const { cards } = this.state;
@@ -73,9 +74,9 @@ export class MemoryGame extends PureComponent<any, State> {
       ? unflipAllCards(cards)
       : unflipUnmatchedCards(cards);
 
-    setTimeout(() => {
-      this.setState({ cards: unflippedCards }, this.resetBoardProps);
-    }, UNFLIP_DELAY);
+    const unflipDelay = unflipAll ? 0 : UNFLIP_DELAY;
+    await delay(unflipDelay);
+    this.setState({ cards: unflippedCards }, this.resetBoardProps);
   };
 
   resetBoardProps = () => {
@@ -86,7 +87,8 @@ export class MemoryGame extends PureComponent<any, State> {
   startOver = async () => {
     const unflipAllCards = true;
     await this.unflipCards(unflipAllCards);
-    this.setState({ cards: generateBoardCards(CARDS) });
+    const newCards = generateBoardCards(CARDS);
+    this.setState({ cards: newCards });
   };
 
   _renderCards = () => {

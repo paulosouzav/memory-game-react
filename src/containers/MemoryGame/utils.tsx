@@ -28,3 +28,6 @@ export const checkCardsMatch = (cards: Array<ICard>, cardToMatch: ICard) =>
 
 export const checkEndGame = (cards: Array<ICard>) =>
   !cards.some(card => !card.isMatched);
+
+export const delay = (ms: number) =>
+  new Promise(resolve => setTimeout(resolve, ms));
