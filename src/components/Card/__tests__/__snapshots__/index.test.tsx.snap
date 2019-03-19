@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should render without failing 1`] = `
+.c1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  background: #ecf0f1;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.c2 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  background: #ecf0f1;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.c0 {
+  width: 155px;
+  height: 210px;
+  margin: 10px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-transition: -webkit-transform .4s,opacity .4s;
+  -webkit-transition: transform .4s,opacity .4s;
+  transition: transform .4s,opacity .4s;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.c0:active {
+  -webkit-transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
+}
+
+@media (max-width:576px) {
+  .c0 {
+    width: 90px;
+    height: 130px;
+  }
+}
+
+<Card
+  id="asteroid"
+  image={
+    Object {
+      "alt": "Asteroid",
+      "src": "002-asteroid.png",
+    }
+  }
+>
+  <BaseCard
+    id="asteroid"
+  >
+    <StyledComponent
+      forwardedComponent={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "Face": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "attrs": Array [],
+            "componentStyle": ComponentStyle {
+              "componentId": "sc-bdVaJa",
+              "isStatic": false,
+              "lastClassName": "c2",
+              "rules": Array [
+                "
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  background: #ecf0f1;
+
+  transition: opacity 0.4s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  ",
+                [Function],
+                "
+  ",
+                [Function],
+                "
+",
+              ],
+            },
+            "displayName": "Face",
+            "foldedComponentIds": Array [],
+            "render": [Function],
+            "styledComponentId": "sc-bdVaJa",
+            "target": [Function],
+            "toString": [Function],
+            "warnTooManyClasses": [Function],
+            "withComponent": [Function],
+            Symbol(Symbol.hasInstance): [Function],
+          },
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": false,
+            "lastClassName": "c0",
+            "rules": Array [
+              "
+  width: 155px;
+  height: 210px;
+  margin: 10px;
+  position: relative;
+  border-radius: 8px;
+
+  ",
+              "transition: transform .4s, opacity .4s;",
+              "
+  transform: scale(1);
+  transform-style: preserve-3d;
+
+  ",
+              "
+    box-shadow: 0 0 8px ",
+              "rgba(0,0,0,0.5)",
+              ";
+  ",
+              "
+  
+  ",
+              "
+      @media (",
+              "max",
+              "-width: ",
+              "576",
+              "px) {
+        ",
+              "
+    width: 90px;
+    height: 130px;
+  ",
+              ";
+      }
+    ",
+              "
+
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+  ",
+              [Function],
+              "
+",
+            ],
+          },
+          "displayName": "BaseCard",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "div",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        }
+      }
+      forwardedRef={null}
+      id="asteroid"
+    >
+      <div
+        className="c0"
+        id="asteroid"
+      >
+        <Face
+          alt="Asteroid"
+          front={true}
+          src="002-asteroid.png"
+        >
+          <StyledComponent
+            alt="Asteroid"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  background: #ecf0f1;
+
+  transition: opacity 0.4s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "Face",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
+            front={true}
+            src="002-asteroid.png"
+          >
+            <Component
+              alt="Asteroid"
+              className="c1"
+              front={true}
+              src="002-asteroid.png"
+            >
+              <Image
+                alt="Asteroid"
+                className="c1"
+                src="002-asteroid.png"
+              >
+                <img
+                  alt="Asteroid"
+                  className="c1"
+                  src="002-asteroid.png"
+                />
+              </Image>
+            </Component>
+          </StyledComponent>
+        </Face>
+        <Face
+          alt="Default"
+          src="default-card.png"
+        >
+          <StyledComponent
+            alt="Default"
+            forwardedComponent={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "attrs": Array [],
+                "componentStyle": ComponentStyle {
+                  "componentId": "sc-bdVaJa",
+                  "isStatic": false,
+                  "lastClassName": "c2",
+                  "rules": Array [
+                    "
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  background: #ecf0f1;
+
+  transition: opacity 0.4s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  ",
+                    [Function],
+                    "
+  ",
+                    [Function],
+                    "
+",
+                  ],
+                },
+                "displayName": "Face",
+                "foldedComponentIds": Array [],
+                "render": [Function],
+                "styledComponentId": "sc-bdVaJa",
+                "target": [Function],
+                "toString": [Function],
+                "warnTooManyClasses": [Function],
+                "withComponent": [Function],
+                Symbol(Symbol.hasInstance): [Function],
+              }
+            }
+            forwardedRef={null}
+            src="default-card.png"
+          >
+            <Component
+              alt="Default"
+              className="c2"
+              src="default-card.png"
+            >
+              <Image
+                alt="Default"
+                className="c2"
+                src="default-card.png"
+              >
+                <img
+                  alt="Default"
+                  className="c2"
+                  src="default-card.png"
+                />
+              </Image>
+            </Component>
+          </StyledComponent>
+        </Face>
+      </div>
+    </StyledComponent>
+  </BaseCard>
+</Card>
+`;

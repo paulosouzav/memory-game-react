@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
-import { MAX_WIDTHS, SIZES } from '../../constants';
-import { mediaMin } from '../../utils';
+import { SIZES } from '../../constants/sizes';
+import { MAX_WIDTHS } from '../../constants/screen';
+import { mediaMin } from '../../utils/mediaQuery';
 
 // Modifiers should always be optional
 // so always add the "?" (question mark) sign

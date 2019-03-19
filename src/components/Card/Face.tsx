@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { Image } from '../Image';
-import { ROTATION } from '../../constants';
+import { ROTATION } from '../../constants/rotation';
 
 interface Props {
   front?: boolean;
@@ -28,5 +28,7 @@ const Face = styled(({ front, matched, ...props }) => <Image {...props} />)`
 const MATCHED = css`
   opacity: 0.5;
 `;
+
+Face.displayName = 'Face';
 
 export default Face;

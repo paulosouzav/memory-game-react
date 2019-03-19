@@ -1,8 +1,10 @@
 import React, { PureComponent } from 'react';
-import { Board } from './Board';
-import { Card, EndGame } from '../../components';
-import { ICard } from '../../components/Card';
-import { CARDS } from '../../constants';
+import isEqual from 'lodash/isEqual';
+import cloneDeep from 'lodash/cloneDeep';
+import { Card, ICard } from '../../components/Card';
+import { EndGame } from '../../components/EndGame';
+import { CARDS } from '../../constants/cards';
+import { Nullable } from '../../utils/nullable';
 import {
   generateBoardCards,
   unflipUnmatchedCards,
@@ -11,9 +13,7 @@ import {
   checkEndGame,
   delay,
 } from './utils';
-import { Nullable } from '../../utils/nullable';
-import isEqual from 'lodash/isEqual';
-import cloneDeep from 'lodash/cloneDeep';
+import { Board } from './Board';
 
 interface State {
   cards: Array<ICard>;

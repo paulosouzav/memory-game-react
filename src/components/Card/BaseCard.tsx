@@ -1,8 +1,9 @@
 import styled, { css } from 'styled-components';
-import { SHADOWS, ROTATION } from '../../constants';
-import Face from './Face';
-import { mediaMax } from '../../utils';
 import { transitions } from 'polished';
+import { SHADOWS } from '../../constants/shadows';
+import { ROTATION } from '../../constants/rotation';
+import { mediaMax } from '../../utils/mediaQuery';
+import Face from './Face';
 
 export interface IBaseCard {
   isFlipped?: boolean;
@@ -43,5 +44,6 @@ const MATCHED = css`
 `;
 
 BaseCard.Face = Face;
+BaseCard.displayName = 'BaseCard';
 
 export default BaseCard;

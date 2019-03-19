@@ -7,7 +7,7 @@
   ],
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "@types/jest": "24.0.11",
+    "@types/jest": "^24.0.11",
     "@types/lodash": "^4.14.123",
     "@types/node": "11.11.2",
     "@types/reach__router": "^1.2.3",
@@ -40,7 +40,36 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@types/enzyme": "^3.9.0",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "enzyme-to-json": "^3.3.5",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "1.16.4"
+    "jest-enzyme": "^7.0.2",
+    "jest-styled-components": "^6.3.1",
+    "prettier": "1.16.4",
+    "react-test-renderer": "^16.8.4"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!node_modules/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "html"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

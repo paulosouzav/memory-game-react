@@ -1,5 +1,5 @@
 import { css } from 'styled-components';
-import { BREAKPOINTS } from '../constants';
+import { BREAKPOINTS } from '../constants/screen';
 
 type MediaQuery = 'min' | 'max';
 

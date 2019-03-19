@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-import { COLORS, SHADOWS, FONTS } from '../../constants';
-import { darken, transitions } from 'polished';
+import { COLORS } from '../../constants/colors';
+import { FONTS } from '../../constants/fonts';
+import { SHADOWS } from '../../constants/shadows';
+import { darken } from 'polished';
 
 export const Button = styled.button`
   border-radius: 8px;

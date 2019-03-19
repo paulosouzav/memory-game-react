@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { COLORS, TRANSPARENT_BLACK } from '../../constants';
-import { mediaMax } from '../../utils';
+import { COLORS, TRANSPARENT_BLACK } from '../../constants/colors';
+import { mediaMax } from '../../utils/mediaQuery';
 
 const Title = styled.h1`
   color: ${COLORS.white};
