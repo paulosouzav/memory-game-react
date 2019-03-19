@@ -5,7 +5,7 @@ interface Props {
   medium?: boolean;
 }
 
-export const Board = styled.div`
+const Board = styled.div`
   width: 100%;
   max-width: 720px;
   margin: auto;
@@ -19,10 +19,14 @@ export const Board = styled.div`
   ${({ large }: Props) => large && LARGE}
 `;
 
+const MEDIUM = css`
+  max-width: 1050px;
+`;
+
 const LARGE = css`
   max-width: unset;
 `;
 
-const MEDIUM = css`
-  max-width: 1050px;
-`;
+Board.displayName = 'Board';
+
+export default Board;

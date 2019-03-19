@@ -1,11 +1,11 @@
 import React from 'react';
-import { Button } from '../';
-import { shallow } from 'enzyme';
+import Button from '../';
+import { mount } from 'enzyme';
 import 'jest-styled-components';
 
 describe('Button', () => {
   it('should render without failing', () => {
-    const wrapper = shallow(<Button />);
+    const wrapper = mount(<Button />);
     expect(wrapper).toMatchSnapshot();
   });
 });

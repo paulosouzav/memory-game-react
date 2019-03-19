@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 import { transitions } from 'polished';
 import { TRANSPARENT_BLACK } from '../../constants/colors';
-import { Button } from '../Button';
+import Button from '../Button';
 import Title from './Title';
 
 interface Props {

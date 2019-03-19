@@ -4,7 +4,7 @@ import { FONTS } from '../../constants/fonts';
 import { SHADOWS } from '../../constants/shadows';
 import { darken } from 'polished';
 
-export const Button = styled.button`
+const Button = styled.button`
   border-radius: 8px;
   padding: 15px 35px;
 
@@ -24,3 +24,7 @@ export const Button = styled.button`
     background-color: ${darken(0.3, COLORS.purple)};
   }
 `;
+
+Button.displayName = 'Button';
+
+export default Button;

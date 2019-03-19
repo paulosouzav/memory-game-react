@@ -13,7 +13,7 @@ import {
   checkEndGame,
   delay,
 } from './utils';
-import { Board } from './Board';
+import Board from './Board';
 
 interface State {
   cards: Array<ICard>;
