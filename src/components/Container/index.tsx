@@ -10,7 +10,7 @@ interface Modifiers {
   topSpaced?: boolean;
 }
 
-export const Container = styled.div`
+const Container = styled.div`
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -33,3 +33,7 @@ const FLUID = css`
 const TOP_SPACED = css`
   margin-top: ${SIZES.navHeight};
 `;
+
+Container.displayName = 'Container';
+
+export default Container;

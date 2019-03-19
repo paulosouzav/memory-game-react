@@ -1,0 +1,348 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EndGame should render active EndGame 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.7);
+  padding: 80px 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .8s,visibility .8s;
+  transition: opacity .8s,visibility .8s;
+  opacity: 1;
+  visibility: visible;
+}
+
+<EndGame
+  active={true}
+>
+  <StyledComponent
+    active={true}
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Button": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "rules": Array [
+              "
+  border-radius: 8px;
+  padding: 15px 35px;
+
+  font-size: 18px;
+  font-family: ",
+              "Roboto",
+              ";
+  text-transform: uppercase;
+
+  color: ",
+              "#ffffff",
+              ";
+  background-color: ",
+              "#6f42c1",
+              ";
+  border: 0;
+  cursor: pointer;
+
+  ",
+              "
+    box-shadow: 0 0 8px ",
+              "rgba(0,0,0,0.5)",
+              ";
+  ",
+              "
+
+  transition: .5s background-color;
+  &:hover {
+    background-color: ",
+              "#2d1a50",
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Title": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+  color: ",
+              "#ffffff",
+              ";
+
+  font-size: 50px;
+  text-shadow: 0 0 8px ",
+              "rgba(0,0,0,0.5)",
+              ";
+  text-align: center;
+  line-height: normal;
+
+  margin: 0 0 10px;
+  padding: 0;
+
+  ",
+              "
+      @media (",
+              "max",
+              "-width: ",
+              "576",
+              "px) {
+        ",
+              "
+    font-size: 40px;
+  ",
+              ";
+      }
+    ",
+              "
+",
+            ],
+          },
+          "displayName": "Title",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "h1",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: ",
+            "rgba(0,0,0,0.7)",
+            ";
+  padding: 80px 0;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  ",
+            "transition: opacity .8s, visibility .8s;",
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "EndGame",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
+</EndGame>
+`;
+
+exports[`EndGame should render without failing 1`] = `
+.c0 {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.7);
+  padding: 80px 0;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .8s,visibility .8s;
+  transition: opacity .8s,visibility .8s;
+}
+
+<EndGame>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Button": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bdVaJa",
+            "isStatic": true,
+            "rules": Array [
+              "
+  border-radius: 8px;
+  padding: 15px 35px;
+
+  font-size: 18px;
+  font-family: ",
+              "Roboto",
+              ";
+  text-transform: uppercase;
+
+  color: ",
+              "#ffffff",
+              ";
+  background-color: ",
+              "#6f42c1",
+              ";
+  border: 0;
+  cursor: pointer;
+
+  ",
+              "
+    box-shadow: 0 0 8px ",
+              "rgba(0,0,0,0.5)",
+              ";
+  ",
+              "
+
+  transition: .5s background-color;
+  &:hover {
+    background-color: ",
+              "#2d1a50",
+              ";
+  }
+",
+            ],
+          },
+          "displayName": "styled.button",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bdVaJa",
+          "target": "button",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "Title": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "attrs": Array [],
+          "componentStyle": ComponentStyle {
+            "componentId": "sc-bwzfXH",
+            "isStatic": true,
+            "rules": Array [
+              "
+  color: ",
+              "#ffffff",
+              ";
+
+  font-size: 50px;
+  text-shadow: 0 0 8px ",
+              "rgba(0,0,0,0.5)",
+              ";
+  text-align: center;
+  line-height: normal;
+
+  margin: 0 0 10px;
+  padding: 0;
+
+  ",
+              "
+      @media (",
+              "max",
+              "-width: ",
+              "576",
+              "px) {
+        ",
+              "
+    font-size: 40px;
+  ",
+              ";
+      }
+    ",
+              "
+",
+            ],
+          },
+          "displayName": "Title",
+          "foldedComponentIds": Array [],
+          "render": [Function],
+          "styledComponentId": "sc-bwzfXH",
+          "target": "h1",
+          "toString": [Function],
+          "warnTooManyClasses": [Function],
+          "withComponent": [Function],
+        },
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-htpNat",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  background-color: ",
+            "rgba(0,0,0,0.7)",
+            ";
+  padding: 80px 0;
+  text-align: center;
+
+  opacity: 0;
+  visibility: hidden;
+  ",
+            "transition: opacity .8s, visibility .8s;",
+            "
+
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "EndGame",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-htpNat",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
+</EndGame>
+`;

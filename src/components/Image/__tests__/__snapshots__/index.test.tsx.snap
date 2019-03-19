@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should render without failing 1`] = `
+<Image
+  alt="Fake Image"
+  src="fake/path/img.png"
+>
+  <img
+    alt="Fake Image"
+    src="fake/path/img.png"
+  />
+</Image>
+`;

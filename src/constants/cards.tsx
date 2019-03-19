@@ -4,7 +4,14 @@ import Mars from '../assets/cards/017-mars.png';
 import Sun from '../assets/cards/033-sun.png';
 import Saturn from '../assets/cards/028-saturn.png';
 import Spaceship from '../assets/cards/014-space-ship.png';
+import DefaultImage from '../assets/cards/default-card.png';
 import { ICard } from '../components/Card';
+import { IImage } from '../components/Image';
+
+export const DEFAULT_CARD_IMAGE: IImage = {
+  src: DefaultImage,
+  alt: 'Default',
+};
 
 export const CARDS: Array<ICard> = [
   {

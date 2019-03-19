@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Title should render without failing 1`] = `
+.c0 {
+  color: #ffffff;
+  font-size: 50px;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  text-align: center;
+  line-height: normal;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+@media (max-width:576px) {
+  .c0 {
+    font-size: 40px;
+  }
+}
+
+<Title>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  color: ",
+            "#ffffff",
+            ";
+
+  font-size: 50px;
+  text-shadow: 0 0 8px ",
+            "rgba(0,0,0,0.5)",
+            ";
+  text-align: center;
+  line-height: normal;
+
+  margin: 0 0 10px;
+  padding: 0;
+
+  ",
+            "
+      @media (",
+            "max",
+            "-width: ",
+            "576",
+            "px) {
+        ",
+            "
+    font-size: 40px;
+  ",
+            ";
+      }
+    ",
+            "
+",
+          ],
+        },
+        "displayName": "Title",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "h1",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <h1
+      className="c0"
+    />
+  </StyledComponent>
+</Title>
+`;

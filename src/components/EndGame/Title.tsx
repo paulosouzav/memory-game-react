@@ -18,4 +18,6 @@ const Title = styled.h1`
   `}
 `;
 
+Title.displayName = 'Title';
+
 export default Title;

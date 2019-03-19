@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BaseCard should render without failing 1`] = `
+.c0 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width:576px) {
+  .c0 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width:758px) {
+  .c0 {
+    max-width: 720px;
+  }
+}
+
+@media (min-width:992px) {
+  .c0 {
+    max-width: 960px;
+  }
+}
+
+@media (min-width:1200px) {
+  .c0 {
+    max-width: 1140px;
+  }
+}
+
+<Container>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "attrs": Array [],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": false,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  
+  ",
+            "
+      @media (",
+            "min",
+            "-width: ",
+            "576",
+            "px) {
+        ",
+            "max-width: ",
+            "540",
+            "px",
+            ";
+      }
+    ",
+            "
+  ",
+            "
+      @media (",
+            "min",
+            "-width: ",
+            "758",
+            "px) {
+        ",
+            "max-width: ",
+            "720",
+            "px",
+            ";
+      }
+    ",
+            "
+  ",
+            "
+      @media (",
+            "min",
+            "-width: ",
+            "992",
+            "px) {
+        ",
+            "max-width: ",
+            "960",
+            "px",
+            ";
+      }
+    ",
+            "
+  ",
+            "
+      @media (",
+            "min",
+            "-width: ",
+            "1200",
+            "px) {
+        ",
+            "max-width: ",
+            "1140",
+            "px",
+            ";
+      }
+    ",
+            "
+
+  ",
+            [Function],
+            "
+  ",
+            [Function],
+            "
+",
+          ],
+        },
+        "displayName": "Container",
+        "foldedComponentIds": Array [],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": "div",
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <div
+      className="c0"
+    />
+  </StyledComponent>
+</Container>
+`;

@@ -33,5 +33,6 @@ const ACTIVE = css`
 
 EndGame.Title = Title;
 EndGame.Button = Button;
+EndGame.displayName = 'EndGame';
 
 export { EndGame };

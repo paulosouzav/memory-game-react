@@ -1,17 +1,12 @@
 import React from 'react';
 import { IImage } from '../Image';
 import BaseCard, { IBaseCard } from './BaseCard';
-import DefaultImage from '../../assets/cards/default-card.png';
+import { DEFAULT_CARD_IMAGE } from '../../constants/cards';
 
 export interface ICard extends IBaseCard {
   id: string;
   image: IImage;
 }
-
-const DEFAULT_CARD_IMAGE: IImage = {
-  src: DefaultImage,
-  alt: 'Default',
-};
 
 export const Card = ({ image, ...cardProps }: ICard) => {
   return (

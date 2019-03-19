@@ -73,9 +73,11 @@ exports[`Card should render without failing 1`] = `
       "src": "002-asteroid.png",
     }
   }
+  isMatched={false}
 >
   <BaseCard
     id="asteroid"
+    isMatched={false}
   >
     <StyledComponent
       forwardedComponent={
@@ -189,6 +191,7 @@ exports[`Card should render without failing 1`] = `
       }
       forwardedRef={null}
       id="asteroid"
+      isMatched={false}
     >
       <div
         className="c0"
@@ -197,6 +200,7 @@ exports[`Card should render without failing 1`] = `
         <Face
           alt="Asteroid"
           front={true}
+          matched={false}
           src="002-asteroid.png"
         >
           <StyledComponent
@@ -245,12 +249,14 @@ exports[`Card should render without failing 1`] = `
             }
             forwardedRef={null}
             front={true}
+            matched={false}
             src="002-asteroid.png"
           >
             <Component
               alt="Asteroid"
               className="c1"
               front={true}
+              matched={false}
               src="002-asteroid.png"
             >
               <Image
