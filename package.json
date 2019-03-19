@@ -6,11 +6,9 @@
     "Paulo Virote de Souza"
   ],
   "dependencies": {
-    "@reach/router": "^1.2.1",
     "@types/jest": "^24.0.11",
     "@types/lodash": "^4.14.123",
     "@types/node": "11.11.2",
-    "@types/reach__router": "^1.2.3",
     "@types/react": "16.8.7",
     "@types/react-dom": "16.8.2",
     "@types/styled-components": "^4.1.12",
@@ -55,7 +53,6 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!src/index.tsx/",
       "!node_modules/"
     ],
     "coverageThreshold": {

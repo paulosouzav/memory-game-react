@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SHADOWS should have expected values 1`] = `
+Object {
+  "hard": Array [
+    "
+    box-shadow: 0 0 8px ",
+    "rgba(0,0,0,0.7)",
+    ";
+  ",
+  ],
+  "none": Array [
+    "
+    box-shadow: none;
+  ",
+  ],
+  "normal": Array [
+    "
+    box-shadow: 0 0 8px ",
+    "rgba(0,0,0,0.5)",
+    ";
+  ",
+  ],
+  "soft": Array [
+    "
+    box-shadow: 0 0 8px ",
+    "rgba(0,0,0,0.2)",
+    ";
+  ",
+  ],
+}
+`;

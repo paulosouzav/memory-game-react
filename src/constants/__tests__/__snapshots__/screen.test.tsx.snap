@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BREAKPOINTS should have expected values 1`] = `
+Object {
+  "lg": 992,
+  "md": 758,
+  "sm": 576,
+  "xl": 1200,
+}
+`;
+
+exports[`MAX_WIDTHS should have expected values 1`] = `
+Object {
+  "lg": 960,
+  "md": 720,
+  "sm": 540,
+  "xl": 1140,
+}
+`;

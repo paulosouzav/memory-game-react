@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FONT_FACES should have expected values 1`] = `
+Array [
+  "
+  ",
+  "
+      @font-face {
+        font-family: ",
+  "Roboto",
+  ", 'sans-serif';
+        src: url(",
+  "Roboto-Regular.ttf",
+  ");
+        font-weight: ",
+  "normal",
+  ";
+      }
+    ",
+  "
+      @font-face {
+        font-family: ",
+  "RobotoThin",
+  ", 'sans-serif';
+        src: url(",
+  "Roboto-Thin.ttf",
+  ");
+        font-weight: ",
+  "100",
+  ";
+      }
+    ",
+  "
+      @font-face {
+        font-family: ",
+  "RobotoLight",
+  ", 'sans-serif';
+        src: url(",
+  "Roboto-Light.ttf",
+  ");
+        font-weight: ",
+  "300",
+  ";
+      }
+    ",
+  "
+      @font-face {
+        font-family: ",
+  "RobotoBold",
+  ", 'sans-serif';
+        src: url(",
+  "Roboto-Bold.ttf",
+  ");
+        font-weight: ",
+  "bold",
+  ";
+      }
+    ",
+  "
+",
+]
+`;
+
+exports[`FONTS should have expected values 1`] = `
+Object {
+  "BOLD": "RobotoBold",
+  "LIGHT": "RobotoLight",
+  "REGULAR": "Roboto",
+  "THIN": "RobotoThin",
+}
+`;

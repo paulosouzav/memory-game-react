@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ROTATION should have expected values 1`] = `
+Object {
+  "half": Array [
+    "
+    transform: rotateY(180deg);
+  ",
+  ],
+}
+`;

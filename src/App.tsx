@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Game } from './views';
-// import { Router } from '@reach/router';
-// import { ROUTES as APP_ROUTES } from './constants';
+import { Game } from './views/Game';
 
 class App extends Component {
   render() {
@@ -10,16 +8,3 @@ class App extends Component {
 }
 
 export default App;
-
-// type ViewProps = {
-//   Component: any;
-//   path: string;
-// };
-
-// const buildView = ({ Component, ...props }: ViewProps, key: number) => (
-//   <Component {...{ ...props, key }} />
-// );
-
-// const Views = () => <Router>{APP_ROUTES.map(buildView)}</Router>;
-
-// export default Views;

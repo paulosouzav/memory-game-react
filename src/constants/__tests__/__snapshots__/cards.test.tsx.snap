@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CARDS should have expected values 1`] = `
+Array [
+  Object {
+    "id": "asteroid",
+    "image": Object {
+      "alt": "Asteroid",
+      "src": "002-asteroid.png",
+    },
+  },
+  Object {
+    "id": "earth",
+    "image": Object {
+      "alt": "Earth",
+      "src": "006-planet-earth.png",
+    },
+  },
+  Object {
+    "id": "mars",
+    "image": Object {
+      "alt": "Mars",
+      "src": "017-mars.png",
+    },
+  },
+  Object {
+    "id": "saturn",
+    "image": Object {
+      "alt": "Saturn",
+      "src": "028-saturn.png",
+    },
+  },
+  Object {
+    "id": "spaceship",
+    "image": Object {
+      "alt": "Spaceship",
+      "src": "014-space-ship.png",
+    },
+  },
+  Object {
+    "id": "sun",
+    "image": Object {
+      "alt": "Sun",
+      "src": "033-sun.png",
+    },
+  },
+]
+`;
+
+exports[`DEFAULT_CARD_IMAGE should have expected values 1`] = `
+Object {
+  "alt": "Default",
+  "src": "default-card.png",
+}
+`;
