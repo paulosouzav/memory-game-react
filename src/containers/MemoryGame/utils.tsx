@@ -11,10 +11,6 @@ export const generateBoardCards = (cards: Array<ICard>) => {
   return shuffle(duplicatedCards);
 };
 
-export const getMatchedCards = (cards: Array<ICard>) => {
-  return cards.filter(card => !card.isMatched);
-};
-
 export const unflipUnmatchedCards = (cards: Array<ICard>) =>
   cards.map(card => (card.isMatched ? card : { ...card, isFlipped: false }));
 
